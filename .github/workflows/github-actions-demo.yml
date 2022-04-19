@@ -4,8 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "environment ${{secrets.jacare}} xjx"
-      - run: echo "environment ${{secrets.xyz.jacare}}"
+      - run: echo "environment ${{env.JACARE}} xjx"
+      - run: echo "environment ${{env.xyz.JACARE}}"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
